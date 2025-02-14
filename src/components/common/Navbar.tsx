@@ -31,7 +31,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-4">
           <Link
-            href="https://github.com/nidhiyashwanth"
+            href="https://github.com/nidhiyashwanth/shadcn-ui-extensions"
             target="_blank"
             className="p-2 rounded-full hover:bg-accent transition-colors"
             aria-label="View on GitHub"
