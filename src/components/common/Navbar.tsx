@@ -27,10 +27,10 @@ export function Navbar() {
               Image Badge
             </Link>
             <Link
-              href="/progress-slider"
+              href="/tooltip-slider"
               className="transition-colors hover:text-foreground/80"
             >
-              Progress Slider
+              Tooltip Slider
             </Link>
           </div>
         </div>

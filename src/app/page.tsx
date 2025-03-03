@@ -35,6 +35,16 @@ export default function Home() {
                 configurable positioning.
               </p>
             </Link>
+            <Link
+              href="/tooltip-slider"
+              className="block p-6 rounded-lg border hover:border-primary transition-colors"
+            >
+              <h2 className="text-2xl font-semibold mb-2">Tooltip Slider</h2>
+              <p className="text-muted-foreground">
+                A slider component with a tooltip that shows the value of the
+                slider.
+              </p>
+            </Link>
           </div>
         </div>
       </main>
