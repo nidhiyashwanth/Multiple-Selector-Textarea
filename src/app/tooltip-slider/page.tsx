@@ -1,6 +1,23 @@
 import { Navbar } from "@/components/common/Navbar";
 import { TooltipSliderDemo } from "@/components/extensions/TooltipSliderDemo";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tooltip Slider",
+  description:
+    "A slider component with a tooltip that shows the current value, providing enhanced user experience for range inputs.",
+  openGraph: {
+    title: "Tooltip Slider | Shadcn UI Extensions",
+    description:
+      "A slider component with a tooltip that shows the current value, providing enhanced user experience for range inputs.",
+  },
+  twitter: {
+    title: "Tooltip Slider | Shadcn UI Extensions",
+    description:
+      "A slider component with a tooltip that shows the current value, providing enhanced user experience for range inputs.",
+  },
+};
 
 export default function TooltipSliderPage() {
   return (

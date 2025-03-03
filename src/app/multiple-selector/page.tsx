@@ -2,6 +2,23 @@ import MultipleSelectorCreatable from "@/components/extensions/MultipleSelectorC
 import ImageBadge from "@/components/extensions/ImageBadge";
 import { Navbar } from "@/components/common/Navbar";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Multiple Selector with Textarea",
+  description:
+    "A textarea-based version of the Multiple Selector component with support for multi-line text input, perfect for handling lists of items.",
+  openGraph: {
+    title: "Multiple Selector with Textarea | Shadcn UI Extensions",
+    description:
+      "A textarea-based version of the Multiple Selector component with support for multi-line text input, perfect for handling lists of items.",
+  },
+  twitter: {
+    title: "Multiple Selector with Textarea | Shadcn UI Extensions",
+    description:
+      "A textarea-based version of the Multiple Selector component with support for multi-line text input, perfect for handling lists of items.",
+  },
+};
 
 export default function MultipleSelectorPage() {
   return (
