@@ -12,25 +12,10 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { TooltipSlider } from "./TooltipSlider";
 import { Label } from "@/components/ui/label";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
-// Check if tabs are available - if not available, we'll use a fallback layout
-let TabsAvailable = true;
-let Tabs: any;
-let TabsList: any;
-let TabsTrigger: any;
-let TabsContent: any;
-
-try {
-  // Dynamic import to prevent build errors if the component doesn't exist
-  const tabsModule = require("@/components/ui/tabs");
-  Tabs = tabsModule.Tabs;
-  TabsList = tabsModule.TabsList;
-  TabsTrigger = tabsModule.TabsTrigger;
-  TabsContent = tabsModule.TabsContent;
-} catch (e) {
-  // If tabs components aren't available, we'll use a fallback layout
-  TabsAvailable = false;
-}
+// Check if tabs are available for fallback support
+const TabsAvailable = true;
 
 /**
  * Demo component showcasing different configurations of the TooltipSlider
@@ -40,7 +25,6 @@ export function TooltipSliderDemo() {
   const [lowValue, setLowValue] = useState([25]);
   const [highValue, setHighValue] = useState([75]);
   const [maxValue, setMaxValue] = useState([100]);
-  const [customValue, setCustomValue] = useState([5]); // Value between 0-10
   const [colorValue, setColorValue] = useState([40]);
   const [imageValue, setImageValue] = useState([60]);
 
