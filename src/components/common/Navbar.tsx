@@ -26,6 +26,12 @@ export function Navbar() {
             >
               Image Badge
             </Link>
+            <Link
+              href="/progress-slider"
+              className="transition-colors hover:text-foreground/80"
+            >
+              Progress Slider
+            </Link>
           </div>
         </div>
 
