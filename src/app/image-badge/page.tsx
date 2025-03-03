@@ -1,6 +1,23 @@
 import { Navbar } from "@/components/common/Navbar";
 import ImageBadgeDemo from "@/components/extensions/ImageBadgeDemo";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Image Badge",
+  description:
+    "Extended Badge component with support for images and configurable positioning, perfect for user badges and profile indicators.",
+  openGraph: {
+    title: "Image Badge | Shadcn UI Extensions",
+    description:
+      "Extended Badge component with support for images and configurable positioning, perfect for user badges and profile indicators.",
+  },
+  twitter: {
+    title: "Image Badge | Shadcn UI Extensions",
+    description:
+      "Extended Badge component with support for images and configurable positioning, perfect for user badges and profile indicators.",
+  },
+};
 
 export default function ImageBadgePage() {
   return (
